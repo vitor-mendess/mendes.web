@@ -11,7 +11,7 @@ import LojaVirtual from "./pages/Servicos/LojaVirtual";
 import LandingPages from "./pages/Servicos/LandingPages";
 import Softwares from "./pages/Servicos/Softwares";
 import ContactPage from "./pages/Contact";
-import SegmentPage from "./components/SegmentPage";
+
 import Advogado from "./pages/segmentos/advogado";
 import Construtora from "./pages/segmentos/construtora";
 import Contabilidade from "./pages/segmentos/contabilidade";
@@ -38,7 +38,7 @@ export default function App() {
         <Route path="/LandingPage" element={<LandingPages />} />
         <Route path="/Software" element={<Softwares />} />
         <Route path="/Contact" element={<ContactPage />} />
-        <Route path="/Segment" element={<SegmentPage />} />
+
         <Route path="/Advogado" element={<Advogado />} />
         <Route path="/Construtor" element={<Construtora />} />
         <Route path="/Contabilidade" element={<Contabilidade />} />

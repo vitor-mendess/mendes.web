@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 
 type Feature = {
-  icon: JSX.Element;
+  icon: React.ReactNode;
   title: string;
   desc: string;
 };
@@ -31,7 +31,7 @@ const fadeUp = {
   }),
 };
 
-export default function Softwares(): JSX.Element {
+export default function Softwares(): React.ReactNode {
 
   const features: Feature[] = [
     {
