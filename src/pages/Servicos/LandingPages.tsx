@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+
 import React from "react";
 import {
   MousePointerClick,
@@ -22,18 +22,6 @@ type Feature = {
 type Step = {
   title: string;
   description: string;
-};
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 40 },
-  show: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: i * 0.15,
-      duration: 0.6,
-    },
-  }),
 };
 
 export default function LandingPages(): React.ReactNode {
@@ -116,8 +104,7 @@ export default function LandingPages(): React.ReactNode {
               Se você quer gerar mais leads, aumentar suas vendas ou validar uma oferta,
               uma landing page é a ferramenta ideal.
               <br /><br />
-              Criamos páginas estratégicas, com design profissional e foco total
-              em conversão.
+              Criamos páginas estratégicas, com design profissional e foco total em conversão.
               <br /><br />
               Nada de páginas bonitas que não vendem — aqui cada elemento tem um objetivo.
             </p>
@@ -143,7 +130,7 @@ export default function LandingPages(): React.ReactNode {
 
         </div>
 
-        {/* SOBRE LANDING PAGE */}
+        {/* SOBRE */}
         <div className="mb-28">
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -186,7 +173,7 @@ export default function LandingPages(): React.ReactNode {
           </div>
         </div>
 
-        {/* FEATURES (CORREÇÃO DO SEU ERRO) */}
+        {/* FEATURES */}
         <div className="mb-28 grid md:grid-cols-3 gap-6">
           {features.map((item, index) => (
             <div
