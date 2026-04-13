@@ -12,21 +12,29 @@ export default function Hero() {
         transition={{ duration: 0.8 }}
       >
 
-        <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6 min-h-[140px]">
-          <TypeAnimation
-            sequence={[
-              "Criação de Sites Profissionais",
-              2000,
-              "Landing Pages que convertem",
-              2000,
-              "Lojas Virtuais que vendem",
-              2000,
-            ]}
-            speed={40}
-            repeat={Infinity}
-            cursor={true}
-          />
-        </h1>
+<h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight mb-6 text-center flex justify-center">
+  
+  <span className="block min-h-[120px] sm:min-h-[140px] md:min-h-[140px] w-[90vw] md:w-auto">
+    
+    <TypeAnimation
+      sequence={[
+        "Criação de Sites Profissionais",
+        2000,
+        "Landing Pages que convertem",
+        2000,
+        "Lojas Virtuais que vendem",
+        2000,
+      ]}
+      speed={40}
+      repeat={Infinity}
+      cursor={true}
+      wrapper="span"
+      className="block text-center"
+    />
+
+  </span>
+
+</h1>
 
         <p className="text-lg md:text-xl text-gray-300 mb-10">
         Somos uma agência de desenvolvimento web, desenvolvendo projetos modernos, rápidos e personalizados para empresas que querem se destacar na internet.

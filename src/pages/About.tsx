@@ -22,13 +22,12 @@ export default function Sobre() {
       <div className="max-w-6xl mx-auto">
 
         {/* HERO */}
-        <motion.div
-          style={{ y: yParallax }}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="text-center mb-24"
-        >
+<motion.div
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  className="text-center"
+>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Sobre a <span className="text-[#fc5d23]">mendes.web</span>
           </h1>
@@ -39,85 +38,66 @@ export default function Sobre() {
           </p>
         </motion.div>
 
-        {/* MINHA HISTÓRIA + FOTO ESTILIZADA */}
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-28">
+        <div className="grid md:grid-cols-2 gap-16 mb-28 mt-16 md:mt-24">
 
-          <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-3xl font-bold mb-4">
-              Minha história
-            </h2>
+  {/* ESQUERDA — MINHA HISTÓRIA */}
+  <motion.div
+    initial={{ opacity: 0, x: -40 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    viewport={{ once: true }}
+  >
+    <h2 className="text-3xl font-bold mb-6">
+      Minha história
+    </h2>
 
-            <p className="text-gray-600 mb-4 leading-relaxed">
-              Meu nome é Vitor Mendes e sou apaixonado por tecnologia,
-              negócios e desenvolvimento digital.
-            </p>
+    <p className="text-gray-600 mb-4 leading-relaxed">
+      Meu nome é Vitor Mendes e sou apaixonado por tecnologia,
+      negócios e desenvolvimento digital.
+    </p>
 
-            <p className="text-gray-600 mb-4 leading-relaxed">
-              Atualmente, curso Análise e Desenvolvimento de Sistemas
-              pela FIAP, onde venho aprofundando meus conhecimentos
-              em programação, sistemas e soluções tecnológicas.
-            </p>
+    <p className="text-gray-600 mb-4 leading-relaxed">
+      Atualmente, curso Análise e Desenvolvimento de Sistemas
+      pela FIAP, onde venho aprofundando meus conhecimentos
+      em programação, sistemas e soluções tecnológicas.
+    </p>
 
-            <p className="text-gray-600 leading-relaxed">
-              Desde cedo, sempre tive interesse em criar coisas e
-              resolver problemas — e foi isso que me levou a começar
-              no desenvolvimento de sites.
-            </p>
-          </motion.div>
+    <p className="text-gray-600 leading-relaxed">
+      Desde cedo, sempre tive interesse em criar coisas e
+      resolver problemas — e foi isso que me levou a começar
+      no desenvolvimento de sites.
+    </p>
+  </motion.div>
 
-          {/* FOTO PREMIUM */}
-          <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.5 }}
-            className="relative"
-          >
-            <div className="absolute inset-0 bg-[#fc5d23] blur-3xl opacity-20 rounded-xl"></div>
 
-            <img
-              src="/minhaFoto.jpeg" // 🔥 coloque sua foto aqui
-              alt="Vitor Mendes"
-              className="relative rounded-xl shadow-2xl w-full h-auto object-contain"
-            />
-          </motion.div>
+  {/* DIREITA — EXPERIÊNCIA */}
+  <motion.div
+    initial={{ opacity: 0, x: 40 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    viewport={{ once: true }}
+  >
+    <h2 className="text-3xl font-bold mb-6">
+      Experiência e trajetória
+    </h2>
 
-        </div>
+    <p className="text-gray-600 mb-4 leading-relaxed">
+      Além da área de tecnologia, também tenho experiência no mundo
+      dos negócios. Sou responsável por uma loja de camisas de time,
+      onde aprendi na prática sobre vendas, marketing e presença digital.
+    </p>
 
-        {/* EXPERIÊNCIA */}
-        <motion.div
-          style={{ y: yParallax }}
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mb-28 text-center"
-        >
-          <h2 className="text-3xl font-bold mb-6">
-            Experiência e trajetória
-          </h2>
+    <p className="text-gray-600 mb-4 leading-relaxed">
+      Essa vivência me permite entender melhor as necessidades de empresas
+      reais — não apenas na teoria, mas no dia a dia.
+    </p>
 
-          <p className="text-gray-600 max-w-3xl mx-auto mb-6 leading-relaxed">
-            Além da área de tecnologia, também tenho experiência no mundo
-            dos negócios. Sou responsável por uma loja de camisas de time,
-            onde aprendi na prática sobre vendas, marketing e presença digital.
-          </p>
+    <p className="text-gray-600 leading-relaxed">
+      Fora do mundo digital, sou praticante e professor de Muay Thai.
+      O esporte me ensinou disciplina, consistência e foco — valores
+      que levo diretamente para os meus projetos.
+    </p>
+  </motion.div>
 
-          <p className="text-gray-600 max-w-3xl mx-auto mb-6 leading-relaxed">
-            Essa vivência me permite entender melhor as necessidades de empresas
-            reais — não apenas na teoria, mas no dia a dia.
-          </p>
-
-          <p className="text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Fora do mundo digital, sou praticante e professor de Muay Thai.
-            O esporte me ensinou disciplina, consistência e foco — valores
-            que levo diretamente para os meus projetos.
-          </p>
-        </motion.div>
-
+</div>
         {/* LINHA DO TEMPO PREMIUM */}
         <div className="mb-32">
 
