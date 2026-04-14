@@ -126,7 +126,7 @@ export default function Sobre() {
                 desc: "Aprofundamento em programação e sistemas.",
               },
               {
-                title: "Empreendedor",
+                title: "Loja Online",
                 desc: "Loja de camisas e aprendizado de negócios.",
               },
               {
