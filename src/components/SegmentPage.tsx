@@ -218,123 +218,90 @@ export default function SegmentPage({
       Também desenvolvemos sites profissionais para diversos segmentos.
     </p>
 
-    <div className="grid md:grid-cols-4 gap-6">
+    {/* MOBILE: carrossel | DESKTOP: grid */}
+    <div className="flex md:grid md:grid-cols-4 gap-6 overflow-x-auto md:overflow-visible pb-4">
+
       <Link
         to="/Medico"
-        className="bg-white rounded-3xl shadow-lg p-6 hover:shadow-xl hover:-translate-y-1 transition"
+        className="min-w-[260px] md:min-w-0 bg-white rounded-3xl shadow-lg p-6 hover:shadow-xl hover:-translate-y-1 transition"
       >
         <Stethoscope className="text-[#fc5d23] mb-4" size={32} />
-        <h3 className="text-xl font-bold text-[#031a44] mb-2">
-          Médicos
-        </h3>
-        <p className="text-gray-600">
-          Consultórios e clínicas
-        </p>
+        <h3 className="text-xl font-bold text-[#031a44] mb-2">Médicos</h3>
+        <p className="text-gray-600">Consultórios e clínicas</p>
       </Link>
 
       <Link
         to="/Advogado"
-        className="bg-white rounded-3xl shadow-lg p-6 hover:shadow-xl hover:-translate-y-1 transition"
+        className="min-w-[260px] md:min-w-0 bg-white rounded-3xl shadow-lg p-6 hover:shadow-xl hover:-translate-y-1 transition"
       >
         <Scale className="text-[#fc5d23] mb-4" size={32} />
-        <h3 className="text-xl font-bold text-[#031a44] mb-2">
-          Advogados
-        </h3>
-        <p className="text-gray-600">
-          Escritórios jurídicos
-        </p>
+        <h3 className="text-xl font-bold text-[#031a44] mb-2">Advogados</h3>
+        <p className="text-gray-600">Escritórios jurídicos</p>
       </Link>
 
       <Link
         to="/Dentista"
-        className="bg-white rounded-3xl shadow-lg p-6 hover:shadow-xl hover:-translate-y-1 transition"
+        className="min-w-[260px] md:min-w-0 bg-white rounded-3xl shadow-lg p-6 hover:shadow-xl hover:-translate-y-1 transition"
       >
         <Smile className="text-[#fc5d23] mb-4" size={32} />
-        <h3 className="text-xl font-bold text-[#031a44] mb-2">
-          Dentistas
-        </h3>
-        <p className="text-gray-600">
-          Clínicas odontológicas
-        </p>
+        <h3 className="text-xl font-bold text-[#031a44] mb-2">Dentistas</h3>
+        <p className="text-gray-600">Clínicas odontológicas</p>
       </Link>
 
       <Link
         to="/Psicologo"
-        className="bg-white rounded-3xl shadow-lg p-6 hover:shadow-xl hover:-translate-y-1 transition"
+        className="min-w-[260px] md:min-w-0 bg-white rounded-3xl shadow-lg p-6 hover:shadow-xl hover:-translate-y-1 transition"
       >
         <Brain className="text-[#fc5d23] mb-4" size={32} />
-        <h3 className="text-xl font-bold text-[#031a44] mb-2">
-          Psicólogos
-        </h3>
-        <p className="text-gray-600">
-          Consultas e terapias
-        </p>
+        <h3 className="text-xl font-bold text-[#031a44] mb-2">Psicólogos</h3>
+        <p className="text-gray-600">Consultas e terapias</p>
       </Link>
 
       <Link
         to="/Contabilidade"
-        className="bg-white rounded-3xl shadow-lg p-6 hover:shadow-xl hover:-translate-y-1 transition"
+        className="min-w-[260px] md:min-w-0 bg-white rounded-3xl shadow-lg p-6 hover:shadow-xl hover:-translate-y-1 transition"
       >
         <Calculator className="text-[#fc5d23] mb-4" size={32} />
-        <h3 className="text-xl font-bold text-[#031a44] mb-2">
-          Contabilidade
-        </h3>
-        <p className="text-gray-600">
-          Escritórios contábeis
-        </p>
+        <h3 className="text-xl font-bold text-[#031a44] mb-2">Contabilidade</h3>
+        <p className="text-gray-600">Escritórios contábeis</p>
       </Link>
 
       <Link
-        to="/Construtor"
-        className="bg-white rounded-3xl shadow-lg p-6 hover:shadow-xl hover:-translate-y-1 transition"
+        to="/Construtore"
+        className="min-w-[260px] md:min-w-0 bg-white rounded-3xl shadow-lg p-6 hover:shadow-xl hover:-translate-y-1 transition"
       >
         <Building2 className="text-[#fc5d23] mb-4" size={32} />
-        <h3 className="text-xl font-bold text-[#031a44] mb-2">
-          Construtora
-        </h3>
-        <p className="text-gray-600">
-          Obras e projetos
-        </p>
+        <h3 className="text-xl font-bold text-[#031a44] mb-2">Construtora</h3>
+        <p className="text-gray-600">Obras e projetos</p>
       </Link>
 
       <Link
         to="/Eventos"
-        className="bg-white rounded-3xl shadow-lg p-6 hover:shadow-xl hover:-translate-y-1 transition"
+        className="min-w-[260px] md:min-w-0 bg-white rounded-3xl shadow-lg p-6 hover:shadow-xl hover:-translate-y-1 transition"
       >
         <CalendarDays className="text-[#fc5d23] mb-4" size={32} />
-        <h3 className="text-xl font-bold text-[#031a44] mb-2">
-          Eventos
-        </h3>
-        <p className="text-gray-600">
-          Festas e corporativo
-        </p>
+        <h3 className="text-xl font-bold text-[#031a44] mb-2">Eventos</h3>
+        <p className="text-gray-600">Festas e corporativo</p>
       </Link>
 
       <Link
         to="/Tecnologia"
-        className="bg-white rounded-3xl shadow-lg p-6 hover:shadow-xl hover:-translate-y-1 transition"
+        className="min-w-[260px] md:min-w-0 bg-white rounded-3xl shadow-lg p-6 hover:shadow-xl hover:-translate-y-1 transition"
       >
         <Laptop className="text-[#fc5d23] mb-4" size={32} />
-        <h3 className="text-xl font-bold text-[#031a44] mb-2">
-          Tecnologia
-        </h3>
-        <p className="text-gray-600">
-          Software e sistemas
-        </p>
+        <h3 className="text-xl font-bold text-[#031a44] mb-2">Tecnologia</h3>
+        <p className="text-gray-600">Software e sistemas</p>
       </Link>
 
       <Link
-      to="/Empresa"
-      className="bg-white rounded-3xl shadow-lg p-6 hover:shadow-xl hover:-translate-y-1 transition"
-    >
-      <Building2 className="text-[#fc5d23] mb-4" size={32} />
-      <h3 className="text-xl font-bold text-[#031a44] mb-2">
-        Empresa
-      </h3>
-      <p className="text-gray-600">
-        Sites institucionais e comerciais
-      </p>
-    </Link>
+        to="/Empresa"
+        className="min-w-[260px] md:min-w-0 bg-white rounded-3xl shadow-lg p-6 hover:shadow-xl hover:-translate-y-1 transition"
+      >
+        <Building2 className="text-[#fc5d23] mb-4" size={32} />
+        <h3 className="text-xl font-bold text-[#031a44] mb-2">Empresa</h3>
+        <p className="text-gray-600">Sites institucionais e comerciais</p>
+      </Link>
+
     </div>
   </div>
 </section>

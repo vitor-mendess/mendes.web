@@ -40,7 +40,7 @@ export default function App() {
         <Route path="/Contact" element={<ContactPage />} />
 
         <Route path="/Advogado" element={<Advogado />} />
-        <Route path="/Construtor" element={<Construtora />} />
+        <Route path="/Construtore" element={<Construtora />} />
         <Route path="/Contabilidade" element={<Contabilidade />} />
         <Route path="/Dentista" element={<Dentista />} />
         <Route path="/Eventos" element={<Eventos />} />

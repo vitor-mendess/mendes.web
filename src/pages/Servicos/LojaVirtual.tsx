@@ -47,7 +47,7 @@ export default function LojaVirtual() {
 </a>
           </div>
 
-          <div className="relative">
+          <div className="relative hidden md:block">
             <img
               src="/images/LojaVirtual.webp"
               className="rounded-xl shadow-2xl"

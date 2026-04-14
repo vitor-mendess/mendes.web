@@ -126,7 +126,7 @@ export default function Sobre() {
                 desc: "Aprofundamento em programação e sistemas.",
               },
               {
-                title: "Empreendedorismo",
+                title: "Empreendedor",
                 desc: "Loja de camisas e aprendizado de negócios.",
               },
               {
@@ -151,7 +151,7 @@ export default function Sobre() {
                   {/* bolinha */}
                   <div className="absolute top-6 -right-3 w-5 h-5 bg-[#fc5d23] rounded-full"></div>
 
-                  <h3 className="font-semibold text-lg mb-2">
+                  <h3 className="font-semibold text-base md:text-lg mb-2">
                     {item.title}
                   </h3>
 

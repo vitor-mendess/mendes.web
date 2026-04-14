@@ -14,7 +14,7 @@ export default function Hero() {
 
 <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight mb-6 text-center flex justify-center">
   
-  <span className="block min-h-[120px] sm:min-h-[140px] md:min-h-[140px] w-[90vw] md:w-auto">
+  <span className="block min-h-[120px] sm:min-h-[140px] md:min-h-[140px] w-full max-w-[90%] md:w-auto">
     
     <TypeAnimation
       sequence={[

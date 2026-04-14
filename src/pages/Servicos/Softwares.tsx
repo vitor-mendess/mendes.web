@@ -94,14 +94,14 @@ export default function Softwares(): React.ReactNode {
 
       <div className="max-w-7xl mx-auto">
 
-        {/* HERO */}
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-28">
+       {/* HERO */}
+<div className="grid md:grid-cols-2 gap-12 items-center mb-28">
 
-          <div>
-            <h1 className="text-5xl font-bold mb-6 leading-tight">
-              Softwares
-              <span className="text-[#fc5d23]"> Personalizados</span>
-            </h1>
+  <div>
+    <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+      Softwares
+      <span className="text-[#fc5d23]"> Personalizados</span>
+    </h1>
 
             <p className="text-gray-600 text-lg mb-6 leading-relaxed">
               Desenvolvemos sistemas e automações sob medida para o seu negócio.
@@ -115,7 +115,7 @@ export default function Softwares(): React.ReactNode {
             </button>
           </div>
 
-          <div className="relative">
+          <div className="relative ">
             <img src="/images/Software.jpg" className="rounded-xl shadow-2xl" />
             <div className="absolute -z-10 top-6 left-6 w-full h-full bg-[#031a44] rounded-xl"></div>
           </div>
@@ -125,7 +125,7 @@ export default function Softwares(): React.ReactNode {
         {/* SOBRE */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-28">
 
-          <div className="relative">
+          <div className="relative hidden md:block">
             <img src="/images/SoftwarePersonalizado.jpg" className="rounded-xl shadow-xl" />
           </div>
 

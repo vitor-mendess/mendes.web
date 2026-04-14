@@ -1,4 +1,3 @@
-
 import React from "react";
 import {
   MousePointerClick,
@@ -88,12 +87,9 @@ export default function LandingPages(): React.ReactNode {
 
   return (
     <section className="bg-white text-[#031a44] pt-40 pb-28 px-6">
-
       <div className="max-w-7xl mx-auto">
-
         {/* HERO */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-28">
-
           <div>
             <h1 className="text-5xl font-bold mb-6 leading-tight">
               Criação de
@@ -119,7 +115,8 @@ export default function LandingPages(): React.ReactNode {
             </a>
           </div>
 
-          <div className="relative">
+          {/* ALTERAÇÃO AQUI (imagem escondida no mobile) */}
+          <div className="relative hidden md:block">
             <img
               src="/images/landingPage.webp"
               className="rounded-xl shadow-2xl"
@@ -127,14 +124,11 @@ export default function LandingPages(): React.ReactNode {
             />
             <div className="absolute -z-10 top-6 left-6 w-full h-full bg-[#031a44] rounded-xl"></div>
           </div>
-
         </div>
 
         {/* SOBRE */}
         <div className="mb-28">
-
           <div className="grid md:grid-cols-2 gap-12 items-center">
-
             <div className="relative">
               <img
                 src="/images/LandingPages.jpg"
@@ -169,7 +163,6 @@ export default function LandingPages(): React.ReactNode {
                 Tudo isso sem complicação técnica, com foco total em performance e resultados reais.
               </p>
             </div>
-
           </div>
         </div>
 
@@ -189,9 +182,7 @@ export default function LandingPages(): React.ReactNode {
 
         {/* SEÇÃO PREMIUM */}
         <div className="mb-28 bg-[#031a44] text-white py-20 px-6 rounded-3xl">
-
           <div className="max-w-6xl mx-auto space-y-20">
-
             {[
               {
                 icon: <LayoutTemplate size={70} className="text-[#fc5d23]" />,
@@ -231,7 +222,6 @@ export default function LandingPages(): React.ReactNode {
               },
             ].map((block, i) => (
               <div key={i} className="grid md:grid-cols-2 gap-12 items-center">
-
                 <div className="flex justify-center">
                   <div className="w-40 h-40 bg-[#fc5d23]/10 rounded-2xl flex items-center justify-center border border-[#fc5d23]/30">
                     {block.icon}
@@ -252,10 +242,8 @@ export default function LandingPages(): React.ReactNode {
                     ))}
                   </ul>
                 </div>
-
               </div>
             ))}
-
           </div>
         </div>
 
@@ -300,7 +288,6 @@ export default function LandingPages(): React.ReactNode {
             Solicitar orçamento →
           </a>
         </div>
-
       </div>
     </section>
   );

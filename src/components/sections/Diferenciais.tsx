@@ -14,10 +14,9 @@ import {
 } from "lucide-react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 
 import "swiper/css";
-import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 export default function Diferenciais() {
@@ -92,39 +91,39 @@ export default function Diferenciais() {
       viewport={{ once: true }}
       whileHover={{ y: -8 }}
       transition={{ duration: 0.5 }}
-      className="bg-[#06245f] rounded-xl p-8 text-center hover:shadow-xl transition h-full"
+      className="bg-[#06245f] rounded-xl p-6 text-center hover:shadow-xl transition h-full flex flex-col"
     >
-      <div className="flex justify-center mb-5 text-[#fc5d23]">
+      <div className="flex justify-center mb-4 text-[#fc5d23]">
         {item.icon}
       </div>
 
-      <h3 className="text-lg font-semibold mb-3">
+      <h3 className="text-lg font-semibold mb-3 min-h-[48px]">
         {item.title}
       </h3>
 
-      <p className="text-gray-300 text-sm leading-relaxed">
+      <p className="text-gray-300 text-sm leading-relaxed flex-grow">
         {item.desc}
       </p>
     </motion.div>
   );
 
   return (
-    <section className="bg-[#031a44] py-32 text-white">
+    <section className="bg-[#031a44] py-24 text-white">
 
       <div className="max-w-7xl mx-auto px-6">
 
         {/* título */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-16">
 
           <p className="text-[#fc5d23] font-semibold tracking-wider mb-3">
             DIFERENCIAIS
           </p>
 
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Por que escolher a Mendes.web?
           </h2>
 
-          <p className="text-gray-300 max-w-2xl mx-auto">
+          <p className="text-gray-300 max-w-2xl mx-auto text-sm md:text-base">
             Desenvolvemos soluções digitais completas para empresas
             que desejam crescer com tecnologia e design profissional.
           </p>
@@ -140,23 +139,23 @@ export default function Diferenciais() {
 
         </div>
 
-        {/* MOBILE SLIDER PREMIUM */}
+        {/* MOBILE SLIDER */}
         <div className="md:hidden">
 
           <Swiper
-            modules={[Navigation, Pagination, Autoplay]}
-            spaceBetween={20}
-            slidesPerView={1.15}
-            navigation
+            modules={[Pagination, Autoplay]}
+            spaceBetween={16}
+            slidesPerView={1.1}
+            loop={true}
             pagination={{ clickable: true }}
             autoplay={{
-              delay: 3500,
-              disableOnInteraction: true,
+              delay: 3000,
+              disableOnInteraction: false,
             }}
           >
 
             {items.map((item, index) => (
-              <SwiperSlide key={index}>
+              <SwiperSlide key={index} className="h-auto">
                 <Card item={item} />
               </SwiperSlide>
             ))}

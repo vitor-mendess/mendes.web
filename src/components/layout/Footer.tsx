@@ -84,7 +84,7 @@ export default function Footer() {
       <Smile size={16} /> Site para Dentistas
     </Link>
 
-    <Link to="/Construtor" className="flex gap-2 items-center hover:text-[#fc5d23]">
+    <Link to="/Construtore" className="flex gap-2 items-center hover:text-[#fc5d23]">
       <HardHat size={16} /> Site para Construtora
     </Link>
 
